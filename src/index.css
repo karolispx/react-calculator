@@ -1,14 +1,81 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  margin-top:100px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+ol, ul {
+  padding-left: 30px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.calculator-content {
+  margin: 15px auto;
+  width: 300px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.calculator-button {
+  background-color: #fafafa;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 2px;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.calculator-button:hover {
+  background-color: gainsboro;
+}
+
+.column.column-danger .calculator-button {
+  background: #ffd5d5;
+  color: #843f3f;
+  border-color: #da9c9c;
+}
+
+.column.column-danger .calculator-button:hover {
+  background-color: #e6bfbf;
+}
+
+.column.column-helper .calculator-button {
+  background: #dcf3ff;
+  color: #3d667b;
+  border-color: #859ba7;
+}
+
+.column.column-helper .calculator-button:hover {
+  background-color: #cae1ec;
+}
+
+.calculator-result {
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 2px;
+  outline: 0;
+  text-align: right;
 }
